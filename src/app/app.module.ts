@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ButtonComponent } from './components/button/button.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, TarjetaCreditoComponent, ButtonComponent], //componentes
@@ -15,6 +16,7 @@ import { ButtonComponent } from './components/button/button.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    HttpClientModule
   ], // Modulos(compuestos por componentes)
   providers: [],
   bootstrap: [AppComponent], //componente principal
